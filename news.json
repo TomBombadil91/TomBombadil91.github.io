@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Neue Vermessungstechnologien",
+    "date": "2025-10-20",
+    "image": "news1.jpg",
+    "text": "Erfahren Sie mehr über die neuesten Entwicklungen in der Vermessungstechnologie."
+  },
+  {
+    "title": "Geoinformatik-Konferenz 2025",
+    "date": "2025-10-15",
+    "image": "news2.jpg",
+    "text": "Die jährliche Geoinformatik-Konferenz findet dieses Jahr in Berlin statt."
+  },
+  {
+    "title": "3D-Kartografie im Fokus",
+    "date": "2025-10-10",
+    "image": "news3.jpg",
+    "text": "Wie 3D-Karten die Zukunft der Kartografie revolutionieren."
+  }
+]
