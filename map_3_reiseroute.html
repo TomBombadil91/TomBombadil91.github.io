@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_15729225bf34f43234acd42c3e1f15ae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_15729225bf34f43234acd42c3e1f15ae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_15729225bf34f43234acd42c3e1f15ae = L.map(
+                "map_15729225bf34f43234acd42c3e1f15ae",
+                {
+                    center: [56.5, -4.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2b53615c75e7f5d2bad4a336b491dfbf = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2b53615c75e7f5d2bad4a336b491dfbf.addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+            var tile_layer_ddd9b3101759a8df5cb35cd80bf1c30f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ddd9b3101759a8df5cb35cd80bf1c30f.addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+            var poly_line_81d27e018ee7306056346b7ed5736a74 = L.polyline(
+                [[55.9533, -3.1883], [55.8642, -4.2518], [56.0804, -4.6234], [56.8198, -5.1052], [57.4778, -4.2247], [57.1497, -2.0943]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+            var marker_19a2d94e98e6fda632719a35929c2546 = L.marker(
+                [55.9533, -3.1883],
+                {
+}
+            ).addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+            var div_icon_7164b2730033ca3524d9ffa384737b90 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black;\"\u003e1\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_19a2d94e98e6fda632719a35929c2546.setIcon(div_icon_7164b2730033ca3524d9ffa384737b90);
+            
+    
+            var marker_b7eae7323edc1be3887b3ac122f8902a = L.marker(
+                [55.9533, -3.1883],
+                {
+}
+            ).addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+        var popup_9c55d7645d60b33f9f41c2ab2ab8c776 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d4df2b335bc9097289f0ac348f359ba = $(`<div id="html_0d4df2b335bc9097289f0ac348f359ba" style="width: 100.0%; height: 100.0%;"><b>Edinburgh</b><br>Koordinaten: 55.9533, -3.1883</div>`)[0];
+                popup_9c55d7645d60b33f9f41c2ab2ab8c776.setContent(html_0d4df2b335bc9097289f0ac348f359ba);
+            
+        
+
+        marker_b7eae7323edc1be3887b3ac122f8902a.bindPopup(popup_9c55d7645d60b33f9f41c2ab2ab8c776)
+        ;
+
+        
+    
+    
+            marker_b7eae7323edc1be3887b3ac122f8902a.bindTooltip(
+                `<div>
+                     Station 1: Edinburgh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b6f7924ea1d333f580f045b9e2b29606 = L.marker(
+                [55.8642, -4.2518],
+                {
+}
+            ).addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+            var div_icon_f0e89c09f5b065e27e53e904d146778f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black;\"\u003e2\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_b6f7924ea1d333f580f045b9e2b29606.setIcon(div_icon_f0e89c09f5b065e27e53e904d146778f);
+            
+    
+            var marker_3c0511ea66360e4ced7c6e5544d55a0b = L.marker(
+                [55.8642, -4.2518],
+                {
+}
+            ).addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+        var popup_90cfa0ca48c32875efd416cd8e03f7db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b476b329082794c58e4c3f6640b986d7 = $(`<div id="html_b476b329082794c58e4c3f6640b986d7" style="width: 100.0%; height: 100.0%;"><b>Glasgow</b><br>Koordinaten: 55.8642, -4.2518</div>`)[0];
+                popup_90cfa0ca48c32875efd416cd8e03f7db.setContent(html_b476b329082794c58e4c3f6640b986d7);
+            
+        
+
+        marker_3c0511ea66360e4ced7c6e5544d55a0b.bindPopup(popup_90cfa0ca48c32875efd416cd8e03f7db)
+        ;
+
+        
+    
+    
+            marker_3c0511ea66360e4ced7c6e5544d55a0b.bindTooltip(
+                `<div>
+                     Station 2: Glasgow
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_878eec96d32f07e0ee7ea465d0bdc2bd = L.marker(
+                [56.0804, -4.6234],
+                {
+}
+            ).addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+            var div_icon_3ec4851e348e4fe6b16112bd191721e7 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black;\"\u003e3\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_878eec96d32f07e0ee7ea465d0bdc2bd.setIcon(div_icon_3ec4851e348e4fe6b16112bd191721e7);
+            
+    
+            var marker_d0bca49517a3b2cef2e5ab59af3d9f54 = L.marker(
+                [56.0804, -4.6234],
+                {
+}
+            ).addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+        var popup_2a29d388ec6bfcd5c9b0a7048dcb5e38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d50240ea94c4c16263884a15f9395fd = $(`<div id="html_5d50240ea94c4c16263884a15f9395fd" style="width: 100.0%; height: 100.0%;"><b>Loch Lomond</b><br>Koordinaten: 56.0804, -4.6234</div>`)[0];
+                popup_2a29d388ec6bfcd5c9b0a7048dcb5e38.setContent(html_5d50240ea94c4c16263884a15f9395fd);
+            
+        
+
+        marker_d0bca49517a3b2cef2e5ab59af3d9f54.bindPopup(popup_2a29d388ec6bfcd5c9b0a7048dcb5e38)
+        ;
+
+        
+    
+    
+            marker_d0bca49517a3b2cef2e5ab59af3d9f54.bindTooltip(
+                `<div>
+                     Station 3: Loch Lomond
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_71e5d3466c5ea8349a5e85cfc224ee62 = L.marker(
+                [56.8198, -5.1052],
+                {
+}
+            ).addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+            var div_icon_f52303faaa0cf9dfd9c23fdd914d189f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black;\"\u003e4\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_71e5d3466c5ea8349a5e85cfc224ee62.setIcon(div_icon_f52303faaa0cf9dfd9c23fdd914d189f);
+            
+    
+            var marker_eed2ddfe3d8dd6a1470f51e35a66ca82 = L.marker(
+                [56.8198, -5.1052],
+                {
+}
+            ).addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+        var popup_1d5af8b310b7fb2e4cca676bfdb6a370 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af07fc5f6dd7f97006d48f8713cfd2de = $(`<div id="html_af07fc5f6dd7f97006d48f8713cfd2de" style="width: 100.0%; height: 100.0%;"><b>Fort William</b><br>Koordinaten: 56.8198, -5.1052</div>`)[0];
+                popup_1d5af8b310b7fb2e4cca676bfdb6a370.setContent(html_af07fc5f6dd7f97006d48f8713cfd2de);
+            
+        
+
+        marker_eed2ddfe3d8dd6a1470f51e35a66ca82.bindPopup(popup_1d5af8b310b7fb2e4cca676bfdb6a370)
+        ;
+
+        
+    
+    
+            marker_eed2ddfe3d8dd6a1470f51e35a66ca82.bindTooltip(
+                `<div>
+                     Station 4: Fort William
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4d30552d97f409d6220af9e9edaab7f9 = L.marker(
+                [57.4778, -4.2247],
+                {
+}
+            ).addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+            var div_icon_1b9462fafe32e669c302659b29ca4614 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black;\"\u003e5\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_4d30552d97f409d6220af9e9edaab7f9.setIcon(div_icon_1b9462fafe32e669c302659b29ca4614);
+            
+    
+            var marker_f38bd3bff2ee37eeee68a067510a11b8 = L.marker(
+                [57.4778, -4.2247],
+                {
+}
+            ).addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+        var popup_c1da76ee503561791c9427a8a57e1c54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_966457c8548daaf31f6017153c0f0061 = $(`<div id="html_966457c8548daaf31f6017153c0f0061" style="width: 100.0%; height: 100.0%;"><b>Inverness</b><br>Koordinaten: 57.4778, -4.2247</div>`)[0];
+                popup_c1da76ee503561791c9427a8a57e1c54.setContent(html_966457c8548daaf31f6017153c0f0061);
+            
+        
+
+        marker_f38bd3bff2ee37eeee68a067510a11b8.bindPopup(popup_c1da76ee503561791c9427a8a57e1c54)
+        ;
+
+        
+    
+    
+            marker_f38bd3bff2ee37eeee68a067510a11b8.bindTooltip(
+                `<div>
+                     Station 5: Inverness
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_67d10914dccb03c5b2b39b846d68577b = L.marker(
+                [57.1497, -2.0943],
+                {
+}
+            ).addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+            var div_icon_08e4cbca71323c8ba2b69c5752f7e46c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: black;\"\u003e6\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_67d10914dccb03c5b2b39b846d68577b.setIcon(div_icon_08e4cbca71323c8ba2b69c5752f7e46c);
+            
+    
+            var marker_c1e4b83202aafb8324a4a74389215cf7 = L.marker(
+                [57.1497, -2.0943],
+                {
+}
+            ).addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+        var popup_fbdb0683b3e83cb560cccc783ff8424c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f48b61fd77809ec600ab95184d523f5 = $(`<div id="html_6f48b61fd77809ec600ab95184d523f5" style="width: 100.0%; height: 100.0%;"><b>Aberdeen</b><br>Koordinaten: 57.1497, -2.0943</div>`)[0];
+                popup_fbdb0683b3e83cb560cccc783ff8424c.setContent(html_6f48b61fd77809ec600ab95184d523f5);
+            
+        
+
+        marker_c1e4b83202aafb8324a4a74389215cf7.bindPopup(popup_fbdb0683b3e83cb560cccc783ff8424c)
+        ;
+
+        
+    
+    
+            marker_c1e4b83202aafb8324a4a74389215cf7.bindTooltip(
+                `<div>
+                     Station 6: Aberdeen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_2b53615c75e7f5d2bad4a336b491dfbf.addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+            tile_layer_ddd9b3101759a8df5cb35cd80bf1c30f.addTo(map_15729225bf34f43234acd42c3e1f15ae);
+        
+    
+                marker_19a2d94e98e6fda632719a35929c2546.setIcon(div_icon_7164b2730033ca3524d9ffa384737b90);
+            
+    
+                marker_b6f7924ea1d333f580f045b9e2b29606.setIcon(div_icon_f0e89c09f5b065e27e53e904d146778f);
+            
+    
+                marker_878eec96d32f07e0ee7ea465d0bdc2bd.setIcon(div_icon_3ec4851e348e4fe6b16112bd191721e7);
+            
+    
+                marker_71e5d3466c5ea8349a5e85cfc224ee62.setIcon(div_icon_f52303faaa0cf9dfd9c23fdd914d189f);
+            
+    
+                marker_4d30552d97f409d6220af9e9edaab7f9.setIcon(div_icon_1b9462fafe32e669c302659b29ca4614);
+            
+    
+                marker_67d10914dccb03c5b2b39b846d68577b.setIcon(div_icon_08e4cbca71323c8ba2b69c5752f7e46c);
+            
+</script>
+</html>
