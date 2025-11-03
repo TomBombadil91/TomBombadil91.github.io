@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_21c0fe032e27e34a9c3f37c8d464a7d8 {
+                #map_74137176ee8c1bf2ec0ecc88a70607d6 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +54,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_21c0fe032e27e34a9c3f37c8d464a7d8" ></div>
+            <div class="folium-map" id="map_74137176ee8c1bf2ec0ecc88a70607d6" ></div>
         
 </body>
 <script>
     
     
-            var map_21c0fe032e27e34a9c3f37c8d464a7d8 = L.map(
-                "map_21c0fe032e27e34a9c3f37c8d464a7d8",
+            var map_74137176ee8c1bf2ec0ecc88a70607d6 = L.map(
+                "map_74137176ee8c1bf2ec0ecc88a70607d6",
                 {
                     center: [40.0, 45.0],
                     crs: L.CRS.EPSG3857,
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_52afa01e28a984d6a398ae5b397acc71 = L.tileLayer(
+            var tile_layer_97ce08250b18e2b265fa8257977b9e01 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,10 +95,10 @@
             );
         
     
-            tile_layer_52afa01e28a984d6a398ae5b397acc71.addTo(map_21c0fe032e27e34a9c3f37c8d464a7d8);
+            tile_layer_97ce08250b18e2b265fa8257977b9e01.addTo(map_74137176ee8c1bf2ec0ecc88a70607d6);
         
     
-            var tile_layer_1dc766382aad8725a855d868ac2ff676 = L.tileLayer(
+            var tile_layer_9deb87d0553864025ad56f60f6ee75b9 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -115,33 +115,294 @@
             );
         
     
-            tile_layer_1dc766382aad8725a855d868ac2ff676.addTo(map_21c0fe032e27e34a9c3f37c8d464a7d8);
+            tile_layer_9deb87d0553864025ad56f60f6ee75b9.addTo(map_74137176ee8c1bf2ec0ecc88a70607d6);
         
     
-            var layer_control_999e8dfb97d01f5f2b24ead4af15f580_layers = {
+            var marker_dd008f584c48db992438bd81761ea6fb = L.marker(
+                [52.52, 13.405],
+                {
+}
+            ).addTo(map_74137176ee8c1bf2ec0ecc88a70607d6);
+        
+    
+            var icon_6ae1aa43316813fa5f17b16dc53551f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a0f05a2d0dbd0a2e4505fb750014965 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc322b847f6f08381574fb8b8ed3559f = $(`<div id="html_dc322b847f6f08381574fb8b8ed3559f" style="width: 100.0%; height: 100.0%;"><b>Berlin</b><br>Hauptstadt von Deutschland</div>`)[0];
+                popup_7a0f05a2d0dbd0a2e4505fb750014965.setContent(html_dc322b847f6f08381574fb8b8ed3559f);
+            
+        
+
+        marker_dd008f584c48db992438bd81761ea6fb.bindPopup(popup_7a0f05a2d0dbd0a2e4505fb750014965)
+        ;
+
+        
+    
+    
+            marker_dd008f584c48db992438bd81761ea6fb.bindTooltip(
+                `<div>
+                     Berlin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd008f584c48db992438bd81761ea6fb.setIcon(icon_6ae1aa43316813fa5f17b16dc53551f7);
+            
+    
+            var marker_8cdb5fb6bb1dbd986511d27f18c79b9a = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(map_74137176ee8c1bf2ec0ecc88a70607d6);
+        
+    
+            var icon_ad9c9391bd1963be288abba71f6368b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fee3bb428dadcb4ede5b1a162b493af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da66e5b1cb54bf14bbc688cb256baf3a = $(`<div id="html_da66e5b1cb54bf14bbc688cb256baf3a" style="width: 100.0%; height: 100.0%;"><b>Paris</b><br>Hauptstadt von Frankreich</div>`)[0];
+                popup_3fee3bb428dadcb4ede5b1a162b493af.setContent(html_da66e5b1cb54bf14bbc688cb256baf3a);
+            
+        
+
+        marker_8cdb5fb6bb1dbd986511d27f18c79b9a.bindPopup(popup_3fee3bb428dadcb4ede5b1a162b493af)
+        ;
+
+        
+    
+    
+            marker_8cdb5fb6bb1dbd986511d27f18c79b9a.bindTooltip(
+                `<div>
+                     Paris
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8cdb5fb6bb1dbd986511d27f18c79b9a.setIcon(icon_ad9c9391bd1963be288abba71f6368b2);
+            
+    
+            var marker_01792643e57c5ff37d41ecd03d723de7 = L.marker(
+                [51.5074, -0.1278],
+                {
+}
+            ).addTo(map_74137176ee8c1bf2ec0ecc88a70607d6);
+        
+    
+            var icon_c5d0c21a4c5ee9fb22d4d148cc4d9ac4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb3140b3c0c80a925aa62dee9edbb47d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_abfa5567d7ad4d295071fb4ea5e4c848 = $(`<div id="html_abfa5567d7ad4d295071fb4ea5e4c848" style="width: 100.0%; height: 100.0%;"><b>London</b><br>Hauptstadt von Großbritannien</div>`)[0];
+                popup_eb3140b3c0c80a925aa62dee9edbb47d.setContent(html_abfa5567d7ad4d295071fb4ea5e4c848);
+            
+        
+
+        marker_01792643e57c5ff37d41ecd03d723de7.bindPopup(popup_eb3140b3c0c80a925aa62dee9edbb47d)
+        ;
+
+        
+    
+    
+            marker_01792643e57c5ff37d41ecd03d723de7.bindTooltip(
+                `<div>
+                     London
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_01792643e57c5ff37d41ecd03d723de7.setIcon(icon_c5d0c21a4c5ee9fb22d4d148cc4d9ac4);
+            
+    
+            var marker_43d9f31b3c207270e4b29c40e3a7a465 = L.marker(
+                [40.7128, -74.006],
+                {
+}
+            ).addTo(map_74137176ee8c1bf2ec0ecc88a70607d6);
+        
+    
+            var icon_1b86984f828ce3f354fd7c455f7dc47c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63b1eb4b936642d28388a442456a13d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c86c24f18b3f78e03d94fd565d3740ab = $(`<div id="html_c86c24f18b3f78e03d94fd565d3740ab" style="width: 100.0%; height: 100.0%;"><b>New York</b><br>Metropole in den USA</div>`)[0];
+                popup_63b1eb4b936642d28388a442456a13d5.setContent(html_c86c24f18b3f78e03d94fd565d3740ab);
+            
+        
+
+        marker_43d9f31b3c207270e4b29c40e3a7a465.bindPopup(popup_63b1eb4b936642d28388a442456a13d5)
+        ;
+
+        
+    
+    
+            marker_43d9f31b3c207270e4b29c40e3a7a465.bindTooltip(
+                `<div>
+                     New York
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43d9f31b3c207270e4b29c40e3a7a465.setIcon(icon_1b86984f828ce3f354fd7c455f7dc47c);
+            
+    
+            var marker_16890772153992b4e7a670a032f4f7f0 = L.marker(
+                [35.6895, 139.6917],
+                {
+}
+            ).addTo(map_74137176ee8c1bf2ec0ecc88a70607d6);
+        
+    
+            var icon_e26f63e8fac064ac0eeb0e62704914d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ebc6310dccdf9dd4c602a5694357a17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d9e7cc2dc099fe4069f196561b4a1f8 = $(`<div id="html_0d9e7cc2dc099fe4069f196561b4a1f8" style="width: 100.0%; height: 100.0%;"><b>Tokyo</b><br>Hauptstadt von Japan</div>`)[0];
+                popup_5ebc6310dccdf9dd4c602a5694357a17.setContent(html_0d9e7cc2dc099fe4069f196561b4a1f8);
+            
+        
+
+        marker_16890772153992b4e7a670a032f4f7f0.bindPopup(popup_5ebc6310dccdf9dd4c602a5694357a17)
+        ;
+
+        
+    
+    
+            marker_16890772153992b4e7a670a032f4f7f0.bindTooltip(
+                `<div>
+                     Tokyo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_16890772153992b4e7a670a032f4f7f0.setIcon(icon_e26f63e8fac064ac0eeb0e62704914d4);
+            
+    
+            map_74137176ee8c1bf2ec0ecc88a70607d6.fitBounds(
+                [[52.52, 13.405], [48.8566, 2.3522], [51.5074, -0.1278], [40.7128, -74.006], [35.6895, 139.6917]],
+                {"padding": [20, 20]}
+            );
+        
+    
+            var layer_control_54b206c067c99e0e0f3a8780a0c036b3_layers = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_52afa01e28a984d6a398ae5b397acc71,
-                    "Carto Light" : tile_layer_1dc766382aad8725a855d868ac2ff676,
+                    "openstreetmap" : tile_layer_97ce08250b18e2b265fa8257977b9e01,
+                    "Carto Light" : tile_layer_9deb87d0553864025ad56f60f6ee75b9,
                 },
                 overlays :  {
                 },
             };
-            let layer_control_999e8dfb97d01f5f2b24ead4af15f580 = L.control.layers(
-                layer_control_999e8dfb97d01f5f2b24ead4af15f580_layers.base_layers,
-                layer_control_999e8dfb97d01f5f2b24ead4af15f580_layers.overlays,
+            let layer_control_54b206c067c99e0e0f3a8780a0c036b3 = L.control.layers(
+                layer_control_54b206c067c99e0e0f3a8780a0c036b3_layers.base_layers,
+                layer_control_54b206c067c99e0e0f3a8780a0c036b3_layers.overlays,
                 {
   "position": "topright",
   "collapsed": false,
   "autoZIndex": true,
 }
-            ).addTo(map_21c0fe032e27e34a9c3f37c8d464a7d8);
+            ).addTo(map_74137176ee8c1bf2ec0ecc88a70607d6);
 
         
     
-            tile_layer_52afa01e28a984d6a398ae5b397acc71.addTo(map_21c0fe032e27e34a9c3f37c8d464a7d8);
+            tile_layer_97ce08250b18e2b265fa8257977b9e01.addTo(map_74137176ee8c1bf2ec0ecc88a70607d6);
         
     
-            tile_layer_1dc766382aad8725a855d868ac2ff676.addTo(map_21c0fe032e27e34a9c3f37c8d464a7d8);
+            tile_layer_9deb87d0553864025ad56f60f6ee75b9.addTo(map_74137176ee8c1bf2ec0ecc88a70607d6);
         
+    
+                marker_dd008f584c48db992438bd81761ea6fb.setIcon(icon_6ae1aa43316813fa5f17b16dc53551f7);
+            
+    
+                marker_8cdb5fb6bb1dbd986511d27f18c79b9a.setIcon(icon_ad9c9391bd1963be288abba71f6368b2);
+            
+    
+                marker_01792643e57c5ff37d41ecd03d723de7.setIcon(icon_c5d0c21a4c5ee9fb22d4d148cc4d9ac4);
+            
+    
+                marker_43d9f31b3c207270e4b29c40e3a7a465.setIcon(icon_1b86984f828ce3f354fd7c455f7dc47c);
+            
+    
+                marker_16890772153992b4e7a670a032f4f7f0.setIcon(icon_e26f63e8fac064ac0eeb0e62704914d4);
+            
 </script>
 </html>

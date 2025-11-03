@@ -19,6 +19,24 @@
       padding: 1rem;
       text-align: center;
     }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #005f99;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #007acc;
+    }
     main {
       max-width: 800px;
       margin: 2rem auto;
@@ -142,37 +160,19 @@
       height: 100%;
       object-fit: cover;
     }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #005f99;
-      padding: 0.5rem 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-size: 1rem;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #007acc;
-    }
   </style>
 </head>
 <body>
   <header>
     <h1>Christoph Langlitz</h1>
     <p>Geoinformatik und Vermessung</p>
+    <button class="mode-toggle" onclick="toggleMode()">Night Mode</button>
   </header>
   <nav>
     <a href="about.html">About</a>
     <a href="news.html">News</a>
     <a href="projects.html">Projects</a>
+    <a href="maps.html">Maps</a>
   </nav>
   <main>
     <section>
@@ -238,6 +238,7 @@
         <figcaption>Christoph Langlitz</figcaption>
       </figure>
     </section>
+    
   </main>
   <div class="contact">
     <a href="https://de.wikipedia.org/wiki/LinkedIn" target="_blank">
@@ -247,8 +248,38 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
     </a>
     <a href="https://de.wikipedia.org/wiki/Facebook" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-    </a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+      </a>
   </div>
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      const header = document.querySelector('header');
+      const button = document.querySelector('.mode-toggle');
+
+      // Wechsel zwischen Light- und Night-Mode
+      if (body.classList.contains('light-mode')) {
+        body.classList.remove('light-mode');
+        body.classList.add('night-mode');
+        header.classList.remove('light-mode');
+        header.classList.add('night-mode');
+        button.classList.add('night-mode');
+        button.textContent = 'Light Mode';
+      } else {
+        body.classList.remove('night-mode');
+        body.classList.add('light-mode');
+        header.classList.remove('night-mode');
+        header.classList.add('light-mode');
+        button.classList.remove('night-mode');
+        button.textContent = 'Night Mode';
+      }
+    }
+
+    // Standardmäßig Light-Mode aktivieren
+    document.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('light-mode');
+      document.querySelector('header').classList.add('light-mode');
+    });
+  </script>
 </body>
 </html>
